@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palianytsia</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+    <nav class="nav-bar secondary-text">
+        <div class="nav-bar-wrapper">
+            <div class="nav-logo-wrapper">
+                <i class="nav-logo"></i>
+                <span class="nav-title">Паляниця</span>
+            </div>
+
+            <div class="nav-menu-wrapper">
+                <span class="nav-menu-item">Про нас</span>
+                <span class="nav-menu-item">Новини</span>
+                <span class="nav-menu-item">Блог</span>
+                <i class="nav-menu-icon"></i>
+            </div>
+
+            <div class="menu-button"></div>
+        </div>
+    </nav>
+</header>
+<div class="page-wrapper">
+    <section class="registration-section">
+        <div class="registration-form-wrapper">
+            <div class="registration-form-image-wrapper">
+                <img class="registration-form-image" id="planet-img" src="">
+            </div>
+
+            <div class="form-card flex-column">
+                <div class="form-wrapper">
+
+                    <h2 class="form-title">Електронна черга в
+                        <span id="text-to-change"> електронну пекарню</span></h2>
+
+                    <form class="registration-form flex-column" action="submit">
+
+                        <label class="form-label" for="name">Імʼя</label>
+                        <input class="form-input" type="text" id="name" name="name" placeholder="Введіть імʼя" required>
+
+                        <label class="form-label" for="phone">Телефон</label>
+                        <input class="form-input" type="tel" id="phone" name="phone" pattern="\+[0-9]{12}" placeholder="+380987654321" required>
+
+                        <label class="form-label" for="select">Випічка</label>
+                        <select class="form-input form-input-select" name="" id="select" required>
+                            <option disabled selected value>Виберіть випічку</option>
+                            <option value="bread">Хліб</option>
+                            <option value="loaf">Батон</option>
+                            <option value="croissant">Круасан</option>
+                            <option value="cupcake">Кекс</option>
+                            <option value="cake">Торт</option>
+                        </select>
+                        <button class="form-submit-button" type="submit" >Зареєструватися</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer secondary-text">
+    <span class="footer-credentials">
+        © 2022 Palianytsia. Не всі права захищені.
+    </span>
+</footer>
+
+
+</body>
+</html>
